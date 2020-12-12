@@ -6,7 +6,7 @@ class Config(Config):
 	APP_ID = 2290897
 	API_HASH = "edac79cb30e9d4c106f19b7fc56c76d7"
 	OWNER_ID = "1494222126"
-	AUTH_CHANNEL = [-10082786282972]
+	AUTH_CHANNEL = [-1001437242938]
 	DESTINATION_FOLDER = "!Bot Upload"
 	RCLONE_CONFIG = """type = drive
 client_id = 382912415643-6fshe2g7fv96rds3op7kpuemlftjhogv.apps.googleusercontent.com
