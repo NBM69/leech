@@ -457,7 +457,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
  
                 # msg += f"\n<b>○Status:</b> {file.status}"
                 msg += f"\n<b>○Left:</b> {file.eta_string()}"
-                msg += f"\n<b>○GID:</b> <code>{gid}</code>\n\n<b>🛡️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆: @Nub_Master69 </b>"
+                msg += f"\n<b>○GID:</b> <code>{gid}</code>\n\n<b>🛡️ 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆: ᎶᎧᎮᏗᏝ #𝐵𝐿𝐼𝒩𝒦. </b>"
                 inline_keyboard = []
                 ikeyboard = []
                 ikeyboard.append(InlineKeyboardButton("⛔ Cancel ⛔", callback_data=(f"cancel {gid}").encode("UTF-8")))
