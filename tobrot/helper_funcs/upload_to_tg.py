@@ -324,15 +324,11 @@ async def upload_single_file(message, local_file_name, caption_str, from_user, e
                 if edit_media and message.photo:
                     await asyncio.sleep(EDIT_SLEEP_TIME_OUT)
                     sent_message = await message.edit_media(
-                        media=InputMediaVideo(
+                        media=InputMediaDocument(
                             media=local_file_name,
                             thumb=thumb,
                             caption=caption_str,
-                            parse_mode="html",
-                            width=width,
-                            height=height,
-                            duration=duration,
-                            supports_streaming=True
+                            parse_mode="html"
                         )
                         # quote=True,
                     )
@@ -343,8 +339,6 @@ async def upload_single_file(message, local_file_name, caption_str, from_user, e
                         caption=caption_str,
                         parse_mode="html",
                         duration=duration,
-                        width=width,
-                        height=height,
                         thumb=thumb,
                         supports_streaming=False,
                         disable_notification=True,
