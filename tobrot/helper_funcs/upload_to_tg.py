@@ -313,7 +313,7 @@ async def upload_single_file(message, local_file_name, caption_str, from_user, e
                         ).save(thumb_image_path)
                         img = Image.open(thumb_image_path)
                         # https://stackoverflow.com/a/37631799/4723940
-                        img.resize((320, height))
+                        img.resize((0, height))
                         img.save(thumb_image_path, "JPEG")
                         # https://pillow.readthedocs.io/en/3.1.x/reference/Image.html#create-thumbnails
                 #
@@ -324,6 +324,8 @@ async def upload_single_file(message, local_file_name, caption_str, from_user, e
                 if edit_media and message.photo:
                     await asyncio.sleep(EDIT_SLEEP_TIME_OUT)
                     sent_message = await message.edit_media(
+                        if edit_media and message.photo:
+                	sent_message = await message.edit_media(
                         media=InputMediaDocument(
                             media=local_file_name,
                             thumb=thumb,
@@ -333,14 +335,12 @@ async def upload_single_file(message, local_file_name, caption_str, from_user, e
                         # quote=True,
                     )
                 else:
-                	sent_message = await message.reply_video(
-                        video=local_file_name,
+                    sent_message = await message.reply_document(
+                        document=local_file_name,
                         # quote=True,
+                        thumb=thumb,
                         caption=caption_str,
                         parse_mode="html",
-                        duration=duration,
-                        thumb=thumb,
-                        supports_streaming=False,
                         disable_notification=True,
                         #reply_to_message_id=message.reply_to_message.message_id,
                         progress=progress_for_pyrogram,
