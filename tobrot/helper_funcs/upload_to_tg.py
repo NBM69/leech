@@ -324,9 +324,7 @@ async def upload_single_file(message, local_file_name, caption_str, from_user, e
                 if edit_media and message.photo:
                     await asyncio.sleep(EDIT_SLEEP_TIME_OUT)
                     sent_message = await message.edit_media(
-                        if edit_media and message.photo:
-                	sent_message = await message.edit_media(
-                        media=InputMediaDocument(
+                            media=InputMediaDocument(
                             media=local_file_name,
                             thumb=thumb,
                             caption=caption_str,
