@@ -2,11 +2,14 @@ from tobrot.sample_config import Config
 #Fill your all data, read readme for reference
 
 class Config(Config):
-	TG_BOT_TOKEN= "1268fill---your----data"
-	APP_ID = 1373938
-	API_HASH = "fill--your--data"
-	OWNER_ID = "" #ID of bot owner
-	AUTH_CHANNEL = [-10082786282972]
-	DESTINATION_FOLDER = "HelloMan" #Name of your folder read readme
-	RCLONE_CONFIG = """type = drive\nscope = drive\ntoken = {"access_token":"ya29.fill---your---data----7gGcxnYr71RBuoMVlzhAM_-fil your davxrOpIuvZ-S5lo4YzhYqP:"Bearer","refresh_token":"1//0gnh0j3fUzRITCgYIARAAGBASNwF-L9IrbbYT1QkJg6UCEo3AksHDp6DqUBrhcTBIwUWtlgmbnBQPZKvSAEOTl098VTt8zEojRnY","expiry":"2fill--your--data-07-13T10:4fillyourdata758376Z"}"""
-	#fill taking reference of this config, dont remove """ from both side of the RCLONE_CONFIG variable 
+	TG_BOT_TOKEN= "1439732384:AAE1l81bvkSXxolwaH7T6Yt2gBcjNVdgbXI"
+	APP_ID = 2290897
+	API_HASH = "edac79cb30e9d4c106f19b7fc56c76d7"
+	OWNER_ID = "1494222126"
+	AUTH_CHANNEL = [-1001343804070]
+	DESTINATION_FOLDER = "!Bot Upload"
+	RCLONE_CONFIG = """type = drive
+client_id = 382912415643-6fshe2g7fv96rds3op7kpuemlftjhogv.apps.googleusercontent.com
+client_secret = PwlxTgScJ4umzYSKC-0qyuGD
+scope = drive
+token = {"access_token":"ya29.a0AfH6SMC9FUyTlU2ArLNBBTOQkbnGmHHIYy-6PGvrh_5qacIHGUy9RBT-iQotPt8cjyvx-3uqf_JjHZBecoNwV1tU40LDZzX1XhtGtAxmrrHfX6vLwRIZqQ14vQQn34xKUyTilMkBIOHGhYu0HIDVunZOElF6Fx1vo6BS_D6JGZQ","token_type":"Bearer","refresh_token":"1//0diT6l-UIlGSGCgYIARAAGA0SNwF-L9IraFBm-Zbk7GUXU--CkJj649SGz_A79na14kTysI9uT1B_ZCJVqI9V9-JPj3rfZ4cJhBg","expiry":"2020-12-12T05:35:21.055194388Z"} """
